@@ -49,7 +49,7 @@ uint32_t adcdata[2] = { 0 };
 int ADCMODE =0;
 float tp;
 float temperature;
-float ADCOutputConverted ;
+int ADCOutputConverted ;
 typedef struct {
 	ADC_ChannelConfTypeDef Config;
 	uint32_t data;
@@ -126,10 +126,10 @@ int main(void)
 				   }
 			}State[1] = State[0];
 		if(ADCMODE==0){
-			ADCOutputConverted = ADCChannel[0].data;
+			ADCOutputConverted = ADCChannel[0].data*0.805;
 		}else{
-			tp = ADCChannel[1].data;
-			temperature = ((tp-760)/2500)+25;
+			tp = ADCChannel[1].data*0.805;
+			temperature = ((tp-760)/2.5)+25;
 			ADCOutputConverted = temperature;
 		}
 	}
