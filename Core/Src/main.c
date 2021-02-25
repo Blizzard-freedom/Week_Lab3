@@ -46,6 +46,10 @@ UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
 uint32_t adcdata[2] = { 0 };
+int ADCMODE =0;
+float tp;
+float temperature;
+float ADCOutputConverted ;
 typedef struct {
 	ADC_ChannelConfTypeDef Config;
 	uint32_t data;
@@ -66,10 +70,7 @@ void ADCPollingMethodUpdate();
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-int ADCMODE =0;
-float tp;
-float temperature;
-float ADCOutputConverted ;
+
 /* USER CODE END 0 */
 
 /**
