@@ -472,8 +472,8 @@ int main(void)
  8000588:	e7b5      	b.n	80004f6 <main+0x1e>
  800058a:	bf00      	nop
  800058c:	40020800 	.word	0x40020800
- 8000590:	20000028 	.word	0x20000028
- 8000594:	2000002c 	.word	0x2000002c
+ 8000590:	20000050 	.word	0x20000050
+ 8000594:	20000028 	.word	0x20000028
  8000598:	20000054 	.word	0x20000054
  800059c:	200000e4 	.word	0x200000e4
  80005a0:	443e0000 	.word	0x443e0000
@@ -967,7 +967,7 @@ void ADCPollingMethodInit() {
  8000888:	f85d 7b04 	ldr.w	r7, [sp], #4
  800088c:	4770      	bx	lr
  800088e:	bf00      	nop
- 8000890:	2000002c 	.word	0x2000002c
+ 8000890:	20000028 	.word	0x20000028
  8000894:	10000012 	.word	0x10000012
 
 08000898 <ADCPollingMethodUpdate>:
@@ -1031,7 +1031,7 @@ void ADCPollingMethodUpdate() {
  80008fa:	3708      	adds	r7, #8
  80008fc:	46bd      	mov	sp, r7
  80008fe:	bd80      	pop	{r7, pc}
- 8000900:	2000002c 	.word	0x2000002c
+ 8000900:	20000028 	.word	0x20000028
  8000904:	2000005c 	.word	0x2000005c
 
 08000908 <Error_Handler>:
